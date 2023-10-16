@@ -19,6 +19,7 @@ menu.addEventListener("click", () => {
 });
 /* End of Navrba */
 
+
 next.onclick = function () {
   if (active + 1 > lengthItems) {
     active = 0;

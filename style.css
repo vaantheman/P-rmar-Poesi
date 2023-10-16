@@ -159,9 +159,9 @@ html {
 /* Sections styles */
 /* -----------image slider----------- */
 .slider {
-  width: 100%;
+  width: 100vw;
   max-width: 100vw;
-  height: 700px;
+  height: 100vh;
   margin: auto;
   position: relative;
   overflow: hidden;
@@ -171,7 +171,6 @@ html {
   position: absolute;
   /* top: 0; */
   /* left: 0; */
-  height: 100%;
   display: flex;
   width: max-content;
   transition: 1s;
