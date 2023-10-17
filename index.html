@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pärmar & Poesi</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -38,30 +37,48 @@
     </header>
     <!-- End of Header -->
 
-    <!-- Slider main container -->
+    <!-- <section class="banner" title="background">
+		<hgroup class="hgroup-ctr">
+			<h1 class="hgroup-ctr__title">Pärmar & Poesi</h1>
+		</hgroup>
+	</section> -->
 
-    <!-- Section SLider -->
-    <section class="slider" id="home">
+    <section class="slider">
       <article class="slider__list">
         <figure class="slider_item">
-          <img src="img/fallon-michael-qmlGWIaIgpo-unsplash.jpg" alt="" />
+          <img
+            src="resources/img-head/annie-spratt-qtUAV-_yWZc-unsplash.jpg"
+            alt=""
+          />
         </figure>
         <figure class="slider_item">
-          <img src="img/annie-spratt-qtUAV-_yWZc-unsplash.jpg" alt="" />
+          <img
+            src="resources/img-head/jessica-ruscello-OQSCtabGkSY-unsplash.jpg"
+            alt=""
+          />
         </figure>
         <figure class="slider_item">
-          <img src="img/screwtape-letters-by-izabela-wojcik1.jpg" alt="" />
+          <img
+            src="resources/img-head/lucas-george-wendt-Nz5ThGjBFzA-unsplash.jpg"
+            alt=""
+          />
         </figure>
         <figure class="slider_item">
-          <img src="img/samuel-regan-asante-3sOgARMEBtc-unsplash.jpg" alt="" />
+          <img
+            src="resources/img-head/annie-spratt-FveJVZScEWg-unsplash.jpg"
+            alt=""
+          />
         </figure>
         <figure class="slider_item">
-          <img src="img/annie-spratt-FveJVZScEWg-unsplash.jpg" alt="" />
+          <img
+            src="resources/img-head/fallon-michael-qmlGWIaIgpo-unsplash.jpg"
+            alt=""
+          />
         </figure>
       </article>
       <article class="slider__button">
-        <button id="prev"></button>
-        <button id="next"></button>
+        <button id="prev"><</button>
+        <button id="next">></button>
       </article>
       <article class="slider__dots-container">
         <ul class="slider__dots">
@@ -73,9 +90,8 @@
         </ul>
       </article>
     </section>
-    <!-- End of Section Slider -->
 
-    <main class="main" id="about">
+    <main class="main">
       <section class="main-headline">
         <h2 class="main-headline__text">Vad ska du läsa nu då?</h2>
       </section>
@@ -94,7 +110,131 @@
         </article>
       </section>
 
-      <section class="main-headline" id="news">
+      <div class="slider-top10-container">
+        <section class="slider-top10">
+          <article class="slider-top10__list">
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img1.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img2.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img3.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img4.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img5.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img6.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img7.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img8.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img9.jpg" alt="" />
+            </figure>
+            <figure class="slider-top10_item">
+              <img src="resources/img_10/img10.jpg" alt="" />
+            </figure>
+          </article>
+          <article class="slider-top10__button">
+            <button id="top10-prev"><</button>
+            <button id="top10-next">></button>
+          </article>
+        </section>
+        <section class="slider-top10-info">
+          <h3>10 Böcker du inte får missa</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nemo
+            quisquam quibusdam modi, commodi atque deserunt suscipit aspernatur
+            inventore sequi, sunt, repellendus eligendi assumenda distinctio
+            unde ad ab cupiditate fuga.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+      </div>
+
+      <section>
+        <article class="imgOverlay__container">
+          <figure class="imgOverlay__content imgOverlay__content--shadow1">
+            <img
+              src="resources/img_overlay/antenna-ZDN-G1xBWHY-unsplash.jpg"
+              class="imgOverlay__content--border1"
+              alt=""
+            />
+            <figcaption class="imgOverlay__overlay">
+              <h2>rubrik</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                eligendi natus facere a veritatis
+              </p>
+            </figcaption>
+            <div class="imgOverlay__content--text">
+              <h3 class="imgOverlay__content--color1">Evenemang</h3>
+            </div>
+          </figure>
+          <figure class="imgOverlay__content imgOverlay__content--shadow2">
+            <img
+              src="resources/img_overlay/judeus-samson-zQyIyYvEixY-unsplash.jpg"
+              class="imgOverlay__content--border2"
+              alt=""
+            />
+            <figcaption class="imgOverlay__overlay">
+              <h2>rubrik</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                eligendi natus facere a veritatis
+              </p>
+            </figcaption>
+            <div class="imgOverlay__content--text imgOverlay__content--color2">
+              <h3 class="imgOverlay__content--color2">Evenemang</h3>
+            </div>
+          </figure>
+          <figure class="imgOverlay__content imgOverlay__content--shadow3">
+            <img
+              src="resources/img_overlay/kane-reinholdtsen-LETdkk7wHQk-unsplash.jpg"
+              class="imgOverlay__content--border3"
+              alt=""
+            />
+            <figcaption class="imgOverlay__overlay">
+              <h2>rubrik</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                eligendi natus facere a veritatis
+              </p>
+            </figcaption>
+            <div class="imgOverlay__content--text">
+              <h3 class="imgOverlay__content--color3">Evenemang</h3>
+            </div>
+          </figure>
+          <figure class="imgOverlay__content imgOverlay__content--shadow4">
+            <img
+              src="resources/img_overlay/serj-sakharovskiy-K8qI9hg2_FA-unsplash.jpg"
+              class="imgOverlay__content--border4"
+              alt=""
+            />
+            <figcaption class="imgOverlay__overlay">
+              <h2>rubrik</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
+                eligendi natus facere a veritatis
+              </p>
+            </figcaption>
+            <div class="imgOverlay__content--text">
+              <h3 class="imgOverlay__content--color4">Evenemang</h3>
+            </div>
+          </figure>
+        </article>
+      </section>
+
+      <section class="main-headline">
         <h2 class="main-headline__text">Recension</h2>
       </section>
       <section class="testimonials">
@@ -107,7 +247,7 @@
             />
             <hgroup>
               <h3>Jack Sparrow</h3>
-              <h4>Medlem</h4>
+              <p>Medlem</p>
             </hgroup>
           </header>
           <p class="testimonials-card__lead">
@@ -133,7 +273,7 @@
             />
             <hgroup>
               <h3>Mrs Smith</h3>
-              <h4>Medlem</h4>
+              <p>Medlem</p>
             </hgroup>
           </header>
           <p class="testimonials-card__lead">
@@ -154,7 +294,7 @@
             />
             <hgroup>
               <h3>Mia Khalifa</h3>
-              <h4>Medlem</h4>
+              <p>Medlem</p>
             </hgroup>
           </header>
           <p class="testimonials-card__lead">
@@ -174,7 +314,7 @@
             />
             <hgroup>
               <h3>Margot Barbie Robbie</h3>
-              <h4>Medlem</h4>
+              <p>Medlem</p>
             </hgroup>
           </header>
           <p class="testimonials-card__lead">
@@ -197,7 +337,7 @@
             />
             <hgroup>
               <h3>John Wick</h3>
-              <h4>Medlem</h4>
+              <p>Medlem</p>
             </hgroup>
           </header>
           <p class="testimonials-card__lead">
@@ -217,7 +357,7 @@
       </section>
     </main>
 
-    <section class="info-container" id="events">
+    <section class="info-container">
       <article class="info-content">
         <figure>
           <img
@@ -246,7 +386,7 @@
       </article>
     </section>
 
-    <footer class="footer" id="contact">
+    <footer class="footer">
       <section class="footer-container">
         <article class="footer__content footer__content--inline-size">
           <h3>Följ oss</h3>
@@ -303,6 +443,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="app.js"></script>
+    <script src="script1.js" type="text/javascript"></script>
+    <script src="script2.js" type="text/javascript"></script>
+    <script src="script3.js" type="text/javascript"></script>
   </body>
 </html>
