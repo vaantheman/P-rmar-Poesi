@@ -8,6 +8,7 @@ module.exports = {
     'borderWidth',
     'cursor',
     'height',
+    'width',
     'margin'
       ],
   theme: {
