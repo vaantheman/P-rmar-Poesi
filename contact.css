@@ -87,4 +87,27 @@
   color: grey;
 }
 
+/* Media-query för responsivitet */
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  article {
+    width: 100vw;
+    display: grid;
+    margin: 0%;
+  }
+  .span-button {
+    width: 100%;
+  }
+  button {
+    box-sizing: content-box;
+    width: auto;
+    padding: 5px;
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
