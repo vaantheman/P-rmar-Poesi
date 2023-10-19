@@ -412,7 +412,7 @@ Make sure disabled buttons don't get the pointer cursor.
 /*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
+This can trigger a poorly considered lint error in some tools but is included by design.
 */
 
 img,
@@ -624,9 +624,7 @@ h6 {
 }
 
 /* Header */
-
 /* Nav */
-
 .header {
     width: 100%;
     height: 9rem;
@@ -665,15 +663,15 @@ h6 {
 }
 
 .logo img {
-    max-width: 8rem;
-    -webkit-clip-path: circle();
-    clip-path: circle();
+    max-width: 5rem;
 }
 
 .logo-link h1 {
-    font-size: 3rem;
-    font-family: Georgia, "Times New Roman", Times, cursive;
-    color: rgb(120, 53, 83);
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    color: #3a9299;
+    padding-left: 0.5rem;
 }
 
 .nav-list {
@@ -696,17 +694,17 @@ h6 {
 }
 
 .nav-link {
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
     letter-spacing: 0.5rem;
-    font-family: "Roboto Slab", serif;
+    font-family: "Permanent Marker", cursive;
     font-weight: 500;
-    color: #111111;
+    color: rgb(54, 59, 107);
     margin: 1rem 0;
     transition: color 0.4s;
 }
 
 .nav-link:hover {
-    color: rgb(120, 53, 83);
+    color: rgb(255, 139, 186);
     font-weight: 800;
 }
 
@@ -728,7 +726,7 @@ h6 {
 .line {
     width: 100%;
     height: 0.3rem;
-    background-color: rgb(120, 53, 83);
+    background-color: #3a9299;
     transition: transform 0.3s;
 }
 
@@ -754,6 +752,55 @@ h6 {
 /* End of nav */
 
 /* End of header */
+
+/* ---------------------- */
+
+/* *********************** */
+/* Responsive menu  */
+@media (max-width: 980px) {
+    /* .nav-link {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+  } */
+    .logo {
+        left: 0;
+    }
+}
+
+@media (max-width: 452px) {
+    .nav-link {
+        /* font-size: 2rem; */
+        letter-spacing: normal;
+    }
+    .logo {
+        left: 0;
+    }
+
+    .menu {
+        right: 1.5rem;
+        top: 3rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .nav-link {
+        /*  font-size: 1rem;  */
+        letter-spacing: normal;
+    }
+    .logo {
+        left: 0;
+    }
+
+    .menu {
+        right: 0;
+    }
+
+    .menu {
+        right: 1.5rem;
+        top: 3rem;
+    }
+}
+/* End of Media queries */
 
 /* ---------------------- */
 
