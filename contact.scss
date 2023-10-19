@@ -1,0 +1,97 @@
+/* Importering av fonter*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Permanent+Marker&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Variabler som kan återanvändas */
+$mainFont: "Lato", sans-serif;
+$fontSize: 18px;
+
+/* En mixin för rubrikerna */
+@mixin contact {
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+	font-family: $mainFont;
+}
+
+/* Nesting - Styling av kontaktuppgifter och formulär */
+.contact-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+	max-width: 60em;
+	border-radius: 10px;
+	font-family: $mainFont;
+	font-size: $fontSize;
+	article {
+		padding: 2em;
+		width: 50%;
+		min-height: 22rem;
+		h2 {
+			text-align: center;
+			@include contact;
+		}
+	}
+	.contact-card {
+		background-color: rgb(232, 232, 232);
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		h2 {
+			padding-bottom: 2rem;
+		}
+		.contact-card__text {
+			padding-bottom: 2em;
+		}
+	}
+	.contact-form {
+		background-color: rgb(158, 158, 158);
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		align-content: center;
+
+		span {
+			padding: 1em;
+		}
+		.span-button {
+			display: flex;
+			justify-content: center;
+		}
+		input,
+		label,
+		button {
+			display: block;
+		}
+		button {
+			padding: 10px;
+			width: 30%;
+			font-size: 16px;
+			font-family: inherit;
+			border-radius: 10px;
+			border: 1px solid black;
+		}
+		button:hover {
+			background-color: rgb(86, 86, 86);
+			color: white;
+		}
+		label {
+			margin-bottom: 2px;
+		}
+		input,
+		textarea {
+			padding: 8px;
+			width: 100%;
+			border-radius: 2px;
+			border: none;
+			font-family: inherit;
+			font-size: 14px;
+			color: grey;
+		}
+	}
+}
