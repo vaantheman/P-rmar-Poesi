@@ -32,132 +32,188 @@ h6 {
 /* Header */
 /* Nav */
 .header {
-    width: 100%;
-    height: 9rem;
-    background-color: rgb(255, 254, 255, 0.9);
-    position: fixed;
-    top: -9rem;
-    z-index: 10;
-    transition: height 0.5s;
-    animation: animateNavbar 0.5s 0.7s forwards;
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(255, 254, 255, 0.9);
+  position: fixed;
+  top: -9rem;
+  z-index: 10;
+  transition: height 0.5s;
+  animation: animateNavbar 0.5s 0.7s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes animateNavbar {
-    0% {
-        top: -1rem;
-    }
+  0% {
+    top: -1rem;
+  }
 
-    100% {
-        top: 0;
-    }
+  100% {
+    top: 0;
+  }
 }
 
 .header.change {
-    height: 100vh;
+  height: 100vh;
 }
 
 .logo {
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
 }
 
 .logo-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo img {
-    max-width: 5rem;
+  max-width: 5rem;
 }
 
 .logo-link h1 {
-    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-    font-family: "Permanent Marker", cursive;
-    font-weight: bold;
-    color: #3a9299;
-    padding-left: 0.5rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  color: #3a9299;
+  padding-left: 0.5rem;
 }
 
 .nav-list {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.1s;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.1s;
 }
 
 .change .nav-list {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.4s 0.4s;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.4s 0.4s;
 }
 
 .nav-link {
-    font-size: clamp(1.8rem, 2.5vw, 2.8rem);
-    letter-spacing: 0.5rem;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 500;
-    color: rgb(54, 59, 107);
-    margin: 1rem 0;
-    transition: color 0.4s;
+  font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+  letter-spacing: 0.5rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 500;
+  color: rgb(54, 59, 107);
+  margin: 1rem 0;
+  transition: color 0.4s;
 }
 
 .nav-link:hover {
-    color: rgb(255, 139, 186);
-    font-weight: 800;
+  color: rgb(255, 139, 186);
+  font-weight: 800;
 }
 
 /* Menu */
 
 .menu {
-    width: 3rem;
-    height: 4rem;
-    position: fixed;
-    top: 2rem;
-    right: 4rem;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .line {
-    width: 100%;
-    height: 0.3rem;
-    background-color: #3a9299;
-    transition: transform 0.3s;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #3a9299;
+  transition: transform 0.3s;
 }
 
 .line1 {
-    width: 50%;
+  width: 50%;
 }
 
 .change .line1 {
-    transform: translate(100%, 1rem) rotate(-35deg);
-    transform-origin: right;
+  transform: translate(100%, 0.8rem) rotate(-35deg);
+  transform-origin: right;
 }
 
 .line3 {
-    width: 50%;
-    margin-left: auto;
+  width: 50%;
+  margin-left: auto;
 }
 
 .change .line3 {
-    transform: translateY(-1rem) rotate(35deg);
-    transform-origin: right;
+  transform: translateY(-0.8rem) rotate(35deg);
+  transform-origin: right;
 }
 
 /* End of nav */
 
 /* End of header */
+
+/* ---------------------- */
+
+/* *********************** */
+/* Responsive menu  */
+@media (max-width: 600px) {
+  .nav-link {
+    letter-spacing: normal;
+  }
+  .logo {
+    left: 0;
+  }
+  .menu {
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link {
+    letter-spacing: normal;
+  }
+  .logo {
+    left: 0;
+    top: 1.5rem;
+  }
+    .logo-link h1 {
+        font-size: 8vmin;
+    }
+    .logo img {
+        display: none;
+    }
+  .menu {
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .change .line1 {
+    transform: translate(100%, 0.5rem) rotate(-35deg);
+    transform-origin: right;
+  }
+  .change .line3 {
+    transform: translateY(-0.5rem) rotate(35deg);
+  }
+}
+/* End of Media queries for Header */
+/End of header/nav*  */
 
 /* ---------------------- */
 
@@ -642,12 +698,6 @@ footer {
         font-size: 1rem;
         max-width: 240px;
     }
-  /*.logo-link h1 {
-        font-size: 8vmin;
-    }
-    .logo img {
-        display: none;
-    }*/
 }
 
 @media screen and (max-width: 306px) {
