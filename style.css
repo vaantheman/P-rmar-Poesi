@@ -642,12 +642,12 @@ footer {
         font-size: 1rem;
         max-width: 240px;
     }
-    .logo-link h1 {
+  /*.logo-link h1 {
         font-size: 8vmin;
     }
     .logo img {
         display: none;
-    }
+    }*/
 }
 
 @media screen and (max-width: 306px) {
